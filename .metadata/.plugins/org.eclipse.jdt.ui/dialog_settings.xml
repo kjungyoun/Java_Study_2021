@@ -1,8 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="JavaSE-1.8" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
-	<item value="2" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
+	<item value="1" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<item value="Zulu 8 [8.0.192-zulu-8.33.0.1]" key="org.eclipse.jdt.ui.last.selected.project.jre"/>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
+	<section name="javadoc">
+		<item value="-locale ko_KR -encoding UTF-8 -charset UTF-8 -docencoding UTF-8" key="vmparam"/>
+		<item value="public" key="access"/>
+		<item value="false" key="noindex"/>
+		<item value="/Users/youn/SSAFY/work_java/javase/javadoc.xml" key="antpath"/>
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="true" key="use"/>
+		<item value="true" key="author"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="false" key="nonavbar"/>
+		<item value="" key="docletpath"/>
+		<item value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/bin/javadoc" key="javadoc_command_history"/>
+		<item value="1.8" key="source"/>
+		<item value="true" key="version"/>
+		<item value="" key="docletname"/>
+		<item value="true" key="splitindex"/>
+		<item value="true" key="fromStandard"/>
+		<item value="false" key="notree"/>
+		<item value="/Users/youn/SSAFY/work_java/javase/doc" key="destdir"/>
+		<item value="false" key="openinbrowser"/>
+		<section name="projects">
+			<section name="05_seoul08_share">
+				<item value="/Users/youn/SSAFY/Git/05_seoul08_share/javadoc.xml" key="antpath"/>
+				<item value="/Users/youn/SSAFY/Git/05_seoul08_share/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="homework">
+				<item value="/Users/youn/SSAFY/work_java/homework/javadoc.xml" key="antpath"/>
+				<item value="/Users/youn/SSAFY/work_java/homework/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Test">
+				<item value="/Users/youn/SSAFY/work_java/Test/javadoc.xml" key="antpath"/>
+				<item value="/Users/youn/SSAFY/work_java/Test/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="startcamp_web">
+				<item value="/Users/youn/SSAFY/work_java/startcamp_web/javadoc.xml" key="antpath"/>
+				<item value="/Users/youn/SSAFY/work_java/startcamp_web/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="javase">
+				<item value="/Users/youn/SSAFY/work_java/javase/javadoc.xml" key="antpath"/>
+				<item value="/Users/youn/SSAFY/work_java/javase/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Servers">
+				<item value="/Users/youn/SSAFY/work_java/Servers/javadoc.xml" key="antpath"/>
+				<item value="/Users/youn/SSAFY/work_java/Servers/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="05_seoul08_homework">
+				<item value="/Users/youn/SSAFY/Git/05_seoul08_homework/javadoc.xml" key="antpath"/>
+				<item value="/Users/youn/SSAFY/Git/05_seoul08_homework/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="startcamp">
+				<item value="/Users/youn/SSAFY/work_java/startcamp/javadoc.xml" key="antpath"/>
+				<item value="/Users/youn/SSAFY/work_java/startcamp/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+		</section>
+	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
 		<item value="true" key="group_libraries"/>
@@ -18,6 +85,9 @@
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="NewPackageWizardPage">
+		<item value="false" key="create_package_info_java"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>
