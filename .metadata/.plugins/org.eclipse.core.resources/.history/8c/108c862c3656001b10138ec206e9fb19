@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Me_SSAFY 5</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+.fakeimg {
+	height: 200px;
+	background: #aaa;
+}
+</style>
+</head>
+<body>
+
+	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<img src="images/bananas.jpg" alt="바나나들"
+			style="max-width: 100%; height: auto;">
+		<h1>Hello Let me Introduce myself</h1>
+		<p>안녕하세요 8반 여러분~ 우리 모두 1년동안 힘 합쳐서 열심히 해봐요!</p>
+	</div>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand"
+			href="https://edu.ssafy.com/comm/login/SecurityLoginForm.do">SSAFY
+			Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="container mt-3">
+			<h2>Flex</h2>
+			<p>To create a flexbox container and transform direct children
+				into flex items, use the d-flex class:</p>
+			<div class="d-flex p-3 bg-secondary text-white">
+				<div class="p-2 bg-info">Flex item 1</div>
+				<div class="p-2 bg-warning">Flex item 2</div>
+				<div class="p-2 bg-primary">Flex item 3</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container" style="margin-top: 30px">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>About Me</h2>
+				<h5>Photo of me:</h5>
+				<div class="fakeimg">
+					<img src="images/banana.png" alt="바나나맛우유" width="364" height="236">
+				</div>
+				<p>저는 바나나우유를 정말 좋아합니다~~</p>
+				<h3>My Pages</h3>
+				<p>저에 대해 더 자세히 알고싶다면?</p>
+				<ul class="nav nav-pills flex-column">
+					<li class="nav-item"><a class="nav-link active"
+						href="https://github.com/kjungyoun">My Github</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="https://www.notion.so/SSAFY-5-69cfbd5c76b345c1993c6f9435d845ce">My
+							Nortion</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="https://kjyoun0729.tistory.com">My Blog</a></li>
+					<li class="nav-item"><a class="nav-link disabled" href="#">아직없어요</a>
+					</li>
+				</ul>
+				<hr class="d-sm-none">
+			</div>
+			<div class="col-sm-8">
+				<h2>저에 대해서 말하자면...</h2>
+				<h5>My BirthDay, JUL 29</h5>
+				<div class="fakeimg">
+					<img alt="노래방" src="images/sing.jpg" width="750" height="240">
+				</div>
+				<p>저는 노래방 가는 것을 좋아합니다!</p>
+				<p>저는 노래방 가는 것을 매우 좋아합니다! 하지만 요새 코로나때문에 몇달간 가지 못해 아쉽네요ㅜㅜ</p>
+				<br>
+				<div class="container">
+					<h2>올해의 목표!</h2>
+					<p>2021년에는 꼭 목표를 달성하자!</p>
+					<div class="alert alert-success">
+						<strong>Success!</strong> 금융 IT 기업에 꼭 취업하기!
+					</div>
+					<div class="alert alert-info">
+						<strong>Info!</strong> 반 친구들과 여러 정보 공유하기!
+					</div>
+					<div class="alert alert-warning">
+						<strong>Warning!</strong> 아침에 일찍 일어나기!
+					</div>
+					<div class="alert alert-danger">
+						<strong>Danger!</strong> 결석하지말고 건강 관리하기!
+					</div>
+					<div class="alert alert-primary">
+						<strong>Primary!</strong> SSAFY 수업 열심히 듣고 1일 1알고리즘 꼭 하기!
+					</div>
+					<div class="alert alert-secondary">
+						<strong>Secondary!</strong> 올해는 살 좀 빼기!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron text-center" style="margin-bottom: 0">
+		<p>Footer</p>
+	</div>
+
+</body>
+</html>
+
