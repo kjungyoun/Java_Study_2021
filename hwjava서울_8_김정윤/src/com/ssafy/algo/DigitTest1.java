@@ -27,7 +27,6 @@ public class DigitTest1 {
 		for (int i = 0; i < count.length; i++) {
 			if(count[i] != 0) System.out.println(i+" : "+count[i]+"개");
 		}
-		
 	}
 
 }
