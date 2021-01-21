@@ -4,6 +4,12 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * 
+ * @title 소금쟁이 점프 과제 (01.20)
+ * @Subject Array 4방탐색
+ */
+
 public class Solution22 {
 	static int[] dr = { -1, 1, 0, 0 };
 	static int[] dc = { 0, 0, -1, 1 };
@@ -44,7 +50,7 @@ public class Solution22 {
 				}
 				AnswerN += death;
 			}
-			System.out.println("#"+test_case+" "+(salt - AnswerN));
+			System.out.println("#"+test_case+" "+(salt - AnswerN)); // 생존한 소금쟁이 수 반환
 		}
 
 	}
