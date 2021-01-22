@@ -13,6 +13,8 @@ public class BookTest {
 			System.out.println(book2);
 			
 			System.out.println(book.equals(book2)); // 이럴 때 this가 가리키는 것은 book 객체이다.
+		
+		
 	}
 
 }

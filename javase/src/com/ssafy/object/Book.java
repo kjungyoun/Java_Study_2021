@@ -79,7 +79,7 @@ public class Book {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append(isbn).append("\t|").append(title).append("\t|").append(author).append("\t|")
+		builder.append(isbn).append("\t|").append(title).append(" ").append("\t|").append(author).append("\t|")
 				.append(publisher).append("\t|").append(price).append("\t|")
 				.append(desc);
 		return builder.toString();
