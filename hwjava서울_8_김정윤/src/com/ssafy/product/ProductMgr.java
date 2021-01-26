@@ -1,5 +1,7 @@
 package com.ssafy.product;
 
+import java.util.Arrays;
+
 public class ProductMgr {
 	private Product[] prods;
 	private int size;
@@ -36,24 +38,21 @@ public class ProductMgr {
 	/**
 	 * 저장된 상품을 모두 볼 수 있는 기능
 	 */
-	public void list() {
-		for (int i = 0; i < size; i++) {
-			System.out.println(prods[i]);
-		}
+	public Product[] list() {
+		return Arrays.copyOf(prods, size);
 	}
 	
 	/*
 	 * 상품 번호로 검색하는 기능
 	 * @param num 검색할 상품 번호 
 	 */
-	public void list(int num) {
+	public Product list(int num) {
 		for (int i = 0; i < size; i++) {
 			if(num == prods[i].getNum()) {
-				System.out.println(prods[i]);
-				break;
+				return prods[i];
 			}
-			System.out.println("찾는 상품이 없습니다.");
 		}
+		return null;
 	}
 	
 	/**
@@ -76,11 +75,20 @@ public class ProductMgr {
 	 * 특정 가격 이하의 상품만 검색하는 기능
 	 * @param price 검색할 기준 가격
 	 */
-	public void priceList(int price) {
+	public Product[] priceList(int price) {
+		int index=0;
+		int count = 0;
 		for (int i = 0; i < size; i++) {
 			if(price >= prods[i].getPrice()) {
-				System.out.println(prods[i]);
+				count++;
 			}
 		}
+		Product[] pd = new Product[count];
+		for (int i = 0; i < size; i++) {
+			if(price>=prods[i].getPrice()) {
+				pd[index++] = prods[i];
+			}
+		}
+		return Arrays.copyOf(pd, index);
 	}
 }

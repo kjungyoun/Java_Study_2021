@@ -34,12 +34,15 @@ public class ProductTest {
 				System.out.println("저장되었습니다.");
 			}else if(N == 2) {
 				System.out.println("---------------------------------");
-				mgr.list();
+				Product[] prods = mgr.list();
+				for(Product prod : prods) {
+					System.out.println(prod);
+				}
 			}else if(N == 3) {
 				System.out.println("---------------------------------");
 				System.out.println("검색할 상품의 상품 번호를 입력하세요 : ");
 				int num = scan.nextInt();
-				mgr.list(num);
+				System.out.println(mgr.list(num));
 			}else if(N == 4) {
 				System.out.println("---------------------------------");
 				System.out.println("삭제할 상품의 상품 번호를 입력하세요");
@@ -51,7 +54,10 @@ public class ProductTest {
 				System.out.println("---------------------------------");
 				System.out.println("검색할 기준 가격을 입력하세요 : ");
 				int price = scan.nextInt();
-				mgr.priceList(price);
+				Product[] prod = mgr.priceList(price);
+				for(Product pd : prod) {
+					System.out.println(pd);
+				}
 			}else if(N == 0) break;
 			else System.out.println("0~4사이의 숫자만 입력하세요");
 		}
