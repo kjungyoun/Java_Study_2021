@@ -43,8 +43,7 @@ public class Customer {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Customer [name=").append(name).append(", address=").append(address).append(", age=").append(age)
-				.append("]");
+		builder.append("Customer : name=").append(name).append(", address=").append(address).append(", age=").append(age);
 		return builder.toString();
 	}
 }
