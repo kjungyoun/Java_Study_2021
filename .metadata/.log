@@ -9999,3 +9999,8 @@ Java Model Exception: Java Model Status [com.ssafy.exception [in src [in javase]
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2021-01-28 20:46:12.456
 !MESSAGE com.ssafy.exception [in src [in javase]] does not exist
+
+!ENTRY org.eclipse.core.resources 2 2 2021-01-28 20:51:11.973
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-01-28 20:51:11.973
+!MESSAGE The project description file (.project) for 'AlgoStudy' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
