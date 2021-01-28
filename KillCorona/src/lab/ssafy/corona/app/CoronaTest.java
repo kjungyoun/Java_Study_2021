@@ -1,27 +1,35 @@
 package lab.ssafy.corona.app;
 
-import lab.ssafy.corona.virus.Corona;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 import lab.ssafy.corona.virus.Virus;
 
 public class CoronaTest {
 
 	public static void main(String[] args) {
-//		Virus virus = new Virus();
-//		virus.setName("MERS");
-//		virus.setLevel(5);
 		
-		Corona corona = new Corona("COVID-19",8,200);
-//		corona.setName("COVID-19");
-//		corona.setLevel(8);
-//		corona.setSpreadSpeed(200);
-		corona.showInfo();
+		Virus fv1 = new Virus("fv1", 5);
+		Virus fv2 = new Virus("fv2", 9);
+		Virus fv3 = new Virus("fv3", 1);
+		Virus fv4 = new Virus("fv4", 7);
+		Virus fv5 = new Virus("fv5", 3);
 		
-		Virus virus = new Virus();
-		System.out.println(virus);
-		System.out.println(corona);
+		List<Virus> list = new ArrayList<>();
+		list.add(fv1);
+		list.add(fv2);
+		list.add(fv3);
+		list.add(fv4);
+		list.add(fv5);
 		
-		Virus virus1 = new Corona();
-		System.out.println(virus1);
-	}
+		Collections.sort(list, ( o1, o2 ) -> {
 
+			return o1.getLevel() - o2.getLevel();
+			
+		}); //람다식 표현 
+		
+		for( Virus fv : list) System.out.println(fv);
+	}
 }

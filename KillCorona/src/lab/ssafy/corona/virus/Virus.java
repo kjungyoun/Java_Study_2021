@@ -1,8 +1,10 @@
 package lab.ssafy.corona.virus;
 
 public class Virus {
-	private String name = "바이러스";
+
+	private String name;
 	private int level;
+	
 	public String getName() {
 		return name;
 	}
@@ -15,15 +17,16 @@ public class Virus {
 	public void setLevel(int level) {
 		this.level = level;
 	}
-	public Virus() {
-		
-	}
+	public Virus() {}
 	public Virus(String name, int level) {
 		this.name = name;
 		this.level = level;
 	}
 	
+	@Override
 	public String toString() {
 		return this.getName() + " " + this.getLevel();
 	}
+
+
 }
