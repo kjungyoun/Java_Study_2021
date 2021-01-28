@@ -9968,3 +9968,34 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/KillCorona/sr
 
 !ENTRY org.eclipse.jdt.launching 1 0 2021-01-28 18:00:56.666
 !MESSAGE Installed JRE 'Zulu 8 [8.0.192-zulu-8.33.0.1]' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.debug 4 125 2021-01-28 20:46:12.456
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 1
+Java Model Exception: Java Model Status [com.ssafy.exception [in src [in javase]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:583)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:256)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:530)
+	at org.eclipse.jdt.internal.core.CompilationUnit.openAncestors(CompilationUnit.java:1243)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:267)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:281)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getPackageDeclarations(CompilationUnit.java:892)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.searchAllTypeNames(BasicSearchEngine.java:1872)
+	at org.eclipse.jdt.core.search.SearchEngine.searchAllTypeNames(SearchEngine.java:1202)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.hasMultipleMatchesInWorkspace(JDIDebugTarget.java:1564)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.supportsResource(JDIDebugTarget.java:1406)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.filterUnrelatedResources(JDIDebugTarget.java:3203)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:444)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:415)
+	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:320)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1098)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1085)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:442)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2021-01-28 20:46:12.456
+!MESSAGE com.ssafy.exception [in src [in javase]] does not exist
