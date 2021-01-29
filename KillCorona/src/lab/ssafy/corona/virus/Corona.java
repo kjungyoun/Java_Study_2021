@@ -31,6 +31,6 @@ public class Corona extends Virus implements Comparable<Corona>{
 	
 	@Override
 	public int compareTo(Corona c) {
-		return this.spreadSpeed - c.spreadSpeed;
+		return this.spreadSpeed - c.spreadSpeed; // 오름차순
 	}
 }
