@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+<<<<<<< HEAD
+		<item value="C:\SSAFY\work_java"/>
+=======
 		<item value="/Users/youn/SSAFY/work_java"/>
+>>>>>>> 2f497a7303ef2083301b70a633eb4adc159de5b8
 	</list>
 	<section name="ExternalProjectImportWizard">
 	</section>
