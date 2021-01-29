@@ -7,7 +7,7 @@ public class BookTest {
 
 	public static void main(String[] args) {
 
-		// 도서 리스트를 유지하고 관리하는 BookManager 객체를 생성한다.
+		
 		IBookManager mgr = BookManagerImpl.getInstance();
 		mgr.add(new Book("21424", "Java Pro", "김하나", "jaen.kr", 15000, "Java 기본 문법",10));
 		mgr.add(new Book("21425", "Java Pro2", "김하나", "jaen.kr", 25000, "Java 응용",20));
