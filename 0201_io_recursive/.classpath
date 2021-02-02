@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+<<<<<<< HEAD:AlgoStudy/.classpath
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/zulu-8"/>
+	<classpathentry kind="src" path="src"/>
+>>>>>>> 336dfcbe0a780fb7bed3662a5a84348376f0e451:0201_io_recursive/.classpath
+	<classpathentry kind="output" path="bin"/>
+</classpath>
