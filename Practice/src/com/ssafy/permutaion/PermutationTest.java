@@ -15,12 +15,13 @@ public class PermutationTest {
 			System.out.println(Arrays.toString(numbers));
 			return;
 		}
+		top:
 		for(int i=1;i<=N;i++) {
 			for (int j = 0; j < cnt; j++) {
-				if(numbers[j]!=i) {
-				numbers[cnt] = i;
-				}
+				if(numbers[j]==i) 
+				continue top;
 			}
+			numbers[cnt] = i;
 			permutation(cnt+1);
 		}
 	}
