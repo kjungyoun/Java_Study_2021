@@ -13,7 +13,7 @@ public class Main_D2_2001_김정윤 {
 			max = 0;
 			N = sc.nextInt();
 			map = new int[N][N];
-			M = sc.nextInt();
+			M = sc.nextInt(); // 파리채의 크기
 			
 			// 입력을 받아 배열에 저장
 			for (int i = 0; i < N; i++) {
