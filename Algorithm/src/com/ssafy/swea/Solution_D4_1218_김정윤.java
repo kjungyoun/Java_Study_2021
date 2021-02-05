@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Main_D4_1218 {
+public class Solution_D4_1218_김정윤 {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		System.setIn(new FileInputStream("res/swea/d4/input1218.txt"));
