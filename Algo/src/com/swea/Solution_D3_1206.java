@@ -19,34 +19,17 @@ public class Solution_D3_1206 {
 				arr[i] = Integer.parseInt(st.nextToken());
 			}
 			for (int i = 2; i < N-2; i++) {
-				int min = Integer.MAX_VALUE; // 빌딩의 높이 차이가 가장 적은 값을 저장
-				int j=1,count=0;
-				while(true) {
-					if(i-j>-1 && i+j<N && arr[i]> arr[i-j] && arr[i]> arr[i+j]) { // i번째의 빌딩이 양 옆보다 높을 때
-						min = Math.min(arr[i]-arr[i-j], Math.min(min, arr[i]-arr[i+j])); // 왼쪽과의 차이와 오른쪽과의 차이중 가장 최소인 값 저장
-						j++;
-						count++;
-						continue;
-					}else if(i-j<0 && count>=2 && i+j<N && arr[i]> arr[i+j]) {
-						min = Math.min(min, arr[i]-arr[i+j]);
-						j++;
-						count++;
-						continue;
-					}else if(i+j>=N && i-j>-1 && count>=2 && arr[i]> arr[i-j]) {
-						min = Math.min(min, arr[i]-arr[i-j]);
-						j++;
-						count++;
-						continue;
-					}else { // 자신보다 높은 빌딩이 등장하여 막혔을 경우
-						if(count<2) { // 2칸 이상 확보하지 못했을 경우
-							min = 0;
-							break;
-						}else {// 2칸이상 확보했을 경우
-							sum += min;
-							break;
-						} 
+				boolean isView = true;
+				int min = Integer.MAX_VALUE;
+				for (int j = 1; j < 3; j++) { // 현재 건물의 양 옆의 높이를 비교
+					if(arr[i]<= arr[i-j] || arr[i]<=arr[i+j]) { // 한 건물이라도 현재보다 높으면 break
+						isView = false;
+						break;
+					}else {
+					min = Math.min(min,Math.min(arr[i]-arr[i-j], arr[i]- arr[i+j]));
 					}
 				}
+				if(isView) sum += min;
 			}
 			System.out.println("#"+test_case+" "+sum);
 		}
