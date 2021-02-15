@@ -23,7 +23,8 @@ public class Main_S2_16935_김정윤 {
 		}
 		st = new StringTokenizer(in.readLine());
 		int p[][] = arr;
-		for (int i = 0; i <= st.countTokens(); i++) {
+		int size = st.countTokens();
+		for (int i = 0; i < size; i++) {
 			int cmd = Integer.parseInt(st.nextToken());
 			switch(cmd) {
 			case 1: 
