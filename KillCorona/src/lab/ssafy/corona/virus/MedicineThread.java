@@ -1,21 +1,17 @@
 package lab.ssafy.corona.virus;
 
-public class CoronaThread extends Thread{
-	int num;
-	Cell cell;
+public class MedicineThread extends Thread {
+Cell cell;
 	
-	public CoronaThread(int num) {
-		this.num = num;
-	}
-	
-	public CoronaThread(Cell cell) {
+	public MedicineThread(Cell cell) {
 		this.cell = cell;
 	}
 	
 	@Override
 	public void run() {
+		
 		synchronized(cell) {
-			if( cell.power < 100 ) {
+			if( cell.power >= 500 ) {
 				try {
 					cell.wait();
 				}catch(InterruptedException e) {
@@ -23,16 +19,18 @@ public class CoronaThread extends Thread{
 				}
 			}
 			
-			if( cell.power >= 100 ) {
+			if( cell.power < 500 ) {
 				try {
 					Thread.sleep(500);
 				}catch(InterruptedException e) {
 					e.printStackTrace();
 				}
-				cell.power = cell.power - 100;
+				cell.power = cell.power + 100;
 				cell.notifyAll();
 			}
+	
+			System.out.println("MedicineThread : " + cell.power);
 		}
-		System.out.println("CoronaThread : " + cell.power);
 	}
+
 }
