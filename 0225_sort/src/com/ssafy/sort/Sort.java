@@ -58,6 +58,25 @@ public class Sort {
 		int[] newArr = new int[end - start+1];
 		// 왼쪽, 오른쪽의 시작 위치를 저장
 		int left = start,right = middle+1;
+		int idx = 0; // 결과 배열 인덱스
 		
+		do {
+			if(list[left] < list[right]) {
+				newArr[idx++] = list[left++];
+			}else {
+				newArr[idx++] = list[right++];
+			}
+		} while (left < middle+1 && right <end+1);
+		
+		// 오른쪽 집합이 다 소비된 경우.
+		while(left < middle+1) {
+			newArr[idx++] = list[left++];
+		}
+		
+		// 왼쪽 집합이 다 소비된 경우
+		while(right < end +1) {
+			newArr[idx++] = list[right++];
+		}
+		System.arraycopy(newArr, 0, list, start, idx);
 	}
 }

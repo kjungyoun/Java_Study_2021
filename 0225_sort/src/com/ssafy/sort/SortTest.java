@@ -7,7 +7,8 @@ public class SortTest {
 	public static void main(String[] args) {
 		int []list = {69,10,2,2,16};
 		System.out.println(Arrays.toString(list));
-		Sort.countingSort(list);
+//		Sort.countingSort(list);
+		Sort.mergerSort(list);
 		System.out.println(Arrays.toString(list));
 		
 
