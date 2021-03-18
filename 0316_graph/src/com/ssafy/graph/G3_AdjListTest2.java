@@ -2,9 +2,11 @@ package com.ssafy.graph;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
+
 
 /*
  * 7 정점 개수
@@ -19,46 +21,29 @@ import java.util.StringTokenizer;
  * 5 6
  */
 
-public class G2_AdjListTest {
-	
-	static class Node{
-		int vertex;
-		Node next;
-		public Node(int vertex, Node next) {
-			super();
-			this.vertex = vertex;
-			this.next = next;
-		}
-		public Node(int vertex) {
-			super();
-			this.vertex = vertex;
-		}
-		@Override
-		public String toString() {
-			StringBuilder builder = new StringBuilder();
-			builder.append("Node [vertex=").append(vertex).append(", next=").append(next).append("]");
-			return builder.toString();
-		}
-		
-	}
+public class G3_AdjListTest2 {
 	
 	static int N;
-	static Node[] adjList;
+	static	ArrayList<Integer>[] adjList;
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		N = Integer.parseInt(in.readLine());
 		int C = Integer.parseInt(in.readLine());
-		adjList = new Node[N];
+		// 배열 객체만 생성한 것
+		adjList = new ArrayList[N];
+		
+		// ArrayList 객체 만들기 -> 반드시 해야함!
+		for (int i = 0; i < N; i++) {
+			adjList[i] = new ArrayList<Integer>();
+		}
 		
 		StringTokenizer st = null;
 		for (int i = 0; i < C; i++) {
 			st = new StringTokenizer(in.readLine());
 			int from = Integer.parseInt(st.nextToken());
 			int to = Integer.parseInt(st.nextToken());
-			// 현재 from에 있는 Node가 나의 다음 노드로 오게 포지셔닝함
-			// 즉 리스트의 맨앞에 삽입하는 과정!
-			adjList[from] = new Node(to,adjList[from]);
-			adjList[to] = new Node(from,adjList[to]);
+			adjList[from].add(to);
+			adjList[to].add(from);
 			
 		}
 		System.out.println("====================bfs======================");
@@ -79,10 +64,10 @@ public class G2_AdjListTest {
 			int current = queue.poll();
 			System.out.println((char)(current+65));
 			
-			for (Node temp = adjList[current]; temp != null;temp = temp.next) {
-				if(!visited[temp.vertex]) {
-					queue.offer(temp.vertex);
-					visited[temp.vertex] = true;
+			for (int temp : adjList[current]) { // temp : current와 인접정점인 해당정점의 번호
+				if(!visited[temp]) {
+					queue.offer(temp);
+					visited[temp] = true;
 				}
 			}
 		}
@@ -92,9 +77,9 @@ public class G2_AdjListTest {
 		visited[current] = true;
 		System.out.println((char)(current+65));
 		
-		for (Node temp = adjList[current]; temp != null; temp = temp.next) {
-			if(!visited[temp.vertex]) {
-				dfs(temp.vertex);
+		for (int temp: adjList[current]) {
+			if(!visited[temp]) {
+				dfs(temp);
 			}
 		}
 	}
