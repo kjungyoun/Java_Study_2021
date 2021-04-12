@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 
 public class Main_S5_6198_옥상정원꾸미기 {
-
+	
 	static Stack<Integer> stack = new Stack<Integer>();
 	static long answer;
 	public static void main(String[] args)throws Exception {
@@ -18,9 +18,7 @@ public class Main_S5_6198_옥상정원꾸미기 {
 		}
 		
 		System.out.println(answer);
-
 	}
-	
 	public static void generate(int now) {
 		while(true) {
 			if(stack.isEmpty()) {
