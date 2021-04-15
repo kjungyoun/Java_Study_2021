@@ -42,7 +42,6 @@ public class Main_모의SW_5656_벽돌깨기 {
 	}
 	
 	private static void permutation(int cnt, int[] list) {
-		
 		if(cnt == N) {
 			answer = Math.min(answer, breakBrick(list));
 			return;
