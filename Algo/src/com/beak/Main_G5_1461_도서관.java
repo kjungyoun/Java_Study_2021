@@ -29,18 +29,21 @@ public class Main_G5_1461_도서관 {
 			max = Math.max(max, Math.abs(num));
 		}
 		
+		// 리스트 내림차순 정렬
 		Collections.sort(minus, Collections.reverseOrder());
 		Collections.sort(plus, Collections.reverseOrder());
 		
 		int idx = 0;
 		int sum = 0;
 		
+		// 만약 최장 길이라면 그냥 빼주기
 		if(!minus.isEmpty() && max == minus.peek()) {
 			for (int i = 0; i < M; i++) {
 				minus.poll();
 			}
 		}
 		
+		// 각 그룹에서 가장 긴 길이 구하기
 		while(!minus.isEmpty()) {
 			
 			if(idx < M) {
@@ -57,12 +60,14 @@ public class Main_G5_1461_도서관 {
 			}
 		}
 		
+		// 만약 최장 길이라면 그냥 빼주기
 		if(!plus.isEmpty() && max == plus.peek()) {
 			for (int i = 0; i < M; i++) {
 				plus.poll();
 			}
 		}
 		
+		// 각 그룹에서 가장 긴 길이 구하기
 		idx = 0;
 		while(!plus.isEmpty()) {
 			if(idx < M) {
